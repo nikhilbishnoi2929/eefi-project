@@ -51,7 +51,10 @@ const Theory = () => {
     );
   }, []);
   return (
-    <div className="sm:py-[68px] py-14 bg-theory-bg bg-cover -mt-1" id="theory">
+    <div
+      className="sm:py-[68px] py-14 bg-theory-bg bg-cover bg-fixed -mt-1"
+      id="theory"
+    >
       <div className="container max-w-[1168px] mx-auto px-3 my-1 sm:my-0">
         <div className="flex items-center gap-6 lg:flex-row flex-col justify-between">
           <div className="max-w-[572px] game_text w-full flex flex-col sm:items-center lg:items-start">
