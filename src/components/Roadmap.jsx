@@ -32,7 +32,7 @@ const Roadmap = () => {
   const isIndented = (idx) => [0, 1, 3].includes(idx);
   return (
     <div
-      className="bg-roadmap-bg bg-no-repeat bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed"
+      className="bg-roadmap-bg bg-no-repeat bg-fixed bg-cover relative py-2 sm:py-10 lg:py-24"
       id="product"
     >
       <div className="container max-w-[1164px] mx-auto px-3 my-12 relative z-[1]">
