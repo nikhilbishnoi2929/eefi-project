@@ -1,9 +1,9 @@
 export const NAV_ITEM = [
   { text: "About", url: "#hero" },
-  { text: "IBO Event", url: "#hero" },
-  { text: "EEFI Tokenomics", url: "#hero" },
-  { text: "Team", url: "#blog" },
-  { text: "Partners", url: "#team" },
+  { text: "IBO Event", url: "#amplify" },
+  { text: "EEFI Tokenomics", url: "#theory" },
+  { text: "Team", url: "#team" },
+  { text: "Partners", url: "#partners" },
   { text: "Roadmap", url: "#product" },
 ];
 export const DROP_DOWN = [

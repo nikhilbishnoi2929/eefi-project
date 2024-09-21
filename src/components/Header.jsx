@@ -82,7 +82,8 @@ const Header = () => {
                   key={index}
                   href={`/${item.url}`}
                   onClick={(e) => handle_Click(e, item.url.substring(1))}
-                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white duration-300 "
+                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white duration-300  ease-linear after:absolute after:bg-white after:h-[3px] after:w-0 after:left-[50%]
+                    after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative"
                 >
                   {item.text}
                 </a>
@@ -90,7 +91,8 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={toggle_Drop}
-                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white flex items-center space-x-1"
+                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white flex items-center space-x-1 duration-300  ease-linear after:absolute after:bg-white after:h-[3px] after:w-0 after:left-[50%]
+                    after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative"
                 >
                   <span className="font-normal">More</span>
                   <Icons iconName="downIcon" isDropdownOpen={isDropdownOpen} />
@@ -109,15 +111,12 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <button className="sm:p-[13px_32px] head p-[12px_24px] lg:hidden border lg:text-blue hover:text-blue hover:bg-white text-white lg:border-blue border-white rounded-lg font-medium text-base leading-4  duration-500  ">
-                Enter App
+              <button class="text-blue head hidden max-lg:block sm:p-[13px_32px] rounded-lg text-nowrap relative p-[12px_24px] max-w-[136px] leading-4 w-full overflow-hidden border border-blue bg-white px-3 transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:w-0 before:bg-blue before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
+                <span class="relative z-10"> Enter App</span>
               </button>
             </div>
-            <button
-              className="sm:p-[13px_32px] head p-[12px_24px] hidden lg:block border hover:border-white hover:bg-blue hover:text-white
-              lg:text-blue text-white lg:border-blue border-white rounded-lg font-medium text-base leading-4 duration-500"
-            >
-              Enter App
+            <button class="text-blue head hidden lg:block sm:p-[13px_32px] rounded-lg text-nowrap relative p-[12px_24px] max-w-[136px] leading-4 w-full overflow-hidden border border-blue bg-white px-3 transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:w-0 before:bg-blue before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
+              <span class="relative z-10"> Enter App</span>
             </button>
             <button
               aria-label="Toggle Navigation Menu"

@@ -39,7 +39,10 @@ const Roadmap = () => {
         <h2 className="font-bold roadmap machice_normal text-center leading-[55px] text-4xl lg:text-text_xl text-white">
           Roadmap
         </h2>
-        <div className="max-w-[880px] max-lg:max-w-[500px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px] max-lg:items-center">
+        <div
+          className="max-w-[880px] max-lg:max-w-[500px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px] max-lg:items-center"
+          id="team"
+        >
           {ROADMAP_ITEMS.map((item, idx) => (
             <div
               key={idx}
