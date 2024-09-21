@@ -9,7 +9,7 @@ export const NAV_ITEM = [
 export const DROP_DOWN = [
   { text: "about " },
   { text: "team" },
-  { text: "roadmap" },
+  { text: "roadmap", url: "#product" },
 ];
 export const ROADMAP_ITEMS = [
   {

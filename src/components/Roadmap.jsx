@@ -1,20 +1,49 @@
 import { ROADMAP_ITEMS } from "./common/Helper";
 import cloudsEllips from "../assets/images/webp/position-clouds.webp";
-
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+gsap.registerPlugin(ScrollTrigger);
 const Roadmap = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".roadmap",
+      {
+        scale: 0,
+        opacity: 0,
+        duration: 1,
+      },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.4,
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: ".roadmap",
+          start: "top 90%",
+          end: "bottom 50%",
+        },
+      }
+    );
+  }, []);
   const isRightAligned = (idx) => idx % 2 !== 0;
   const isIndented = (idx) => [0, 1, 3].includes(idx);
   return (
-    <div className="bg-roadmap-bg bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed">
+    <div
+      className="bg-roadmap-bg bg-no-repeat bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed"
+      id="product"
+    >
       <div className="container max-w-[1164px] mx-auto px-3 my-12 relative z-[1]">
-        <h2 className="font-bold machice_normal text-center leading-[55px] text-4xl lg:text-text_xl text-white">
+        <h2 className="font-bold roadmap machice_normal text-center leading-[55px] text-4xl lg:text-text_xl text-white">
           Roadmap
         </h2>
         <div className="max-w-[880px] max-lg:max-w-[500px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px] max-lg:items-center">
           {ROADMAP_ITEMS.map((item, idx) => (
             <div
               key={idx}
-              className={`max-w-[373px] relative w-full border border-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-blue-light ${
+              className={`max-w-[373px] roadmap relative w-full border border-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-blue-light ${
                 isRightAligned(idx) ? "lg:ml-auto" : ""
               }`}
             >

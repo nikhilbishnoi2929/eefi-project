@@ -20,16 +20,16 @@ const Building = () => {
       <div className="container mx-auto px-3 max-w-[1176px] mb-20 pb-20 lg:pb-0 lg:mb-0 relative">
         <div className="flex lg:flex-row flex-col xl:-mt-12 relative z-[1]">
           <div className="xl:pt-[182px] lg:pt-[118px] sm:pt-20 pt-14">
-            <h1 className="text-white uppercase lg:text-text_2xl max-w-[335px] font-medium sm:text-6xl text-5xl machina_regular sm:max-w-[463px] lg:leading-[95px] leading-[60px] sm:leading-[75px]">
+            <h1 className="text-white animate__animated animate__backInLeft uppercase lg:text-text_2xl max-w-[335px] font-medium sm:text-6xl text-5xl machina_regular sm:max-w-[463px] lg:leading-[95px] leading-[60px] sm:leading-[75px]">
               Building elastic Protocol
             </h1>
-            <p className="font-normal font-raleway text-base leading-6 text-white max-w-[524px] md:my-6 my-4 capitalize">
+            <p className="font-normal animate__animated animate__backInLeft font-raleway text-base leading-6 text-white max-w-[524px] md:my-6 my-4 capitalize">
               An ecosystem of unique yield strategies that help you earn yield,
               amplify, and stretch it across all market conditions
             </p>
             <a
               href="/"
-              className="font-bold text-lg text-white leading-5 underline"
+              className="font-bold animate__animated animate__zoomIn text-lg text-white leading-5 underline"
             >
               Audited by Omniscia
             </a>

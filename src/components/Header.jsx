@@ -2,8 +2,32 @@ import React, { useEffect, useState } from "react";
 import { DROP_DOWN, NAV_ITEM } from "./common/Helper";
 import logo from "../assets/images/webp/logo.webp";
 import Icons from "./common/Icon";
-
+import { gsap } from "gsap";
+import "animate.css";
 const Header = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".head",
+      {
+        y: -100,
+        opacity: 0,
+        duration: 1,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        delay: 0.5,
+        stagger: 0.6,
+        scrollTrigger: {
+          trigger: ".head",
+          start: "top center",
+          end: "bottom 50%",
+        },
+      }
+    );
+  }, []);
   const [isDropdownOpen, setDropdown] = useState(false);
   const toggle_Drop = () => {
     setDropdown(!isDropdownOpen);
@@ -42,7 +66,11 @@ const Header = () => {
         <div className={`${!show ? "min-h-screen" : ""} `}>
           <div className="flex justify-between items-center bg-transparent py-1.5">
             <a href="#">
-              <img className="cursor-pointer w-[68px]" src={logo} alt="#" />
+              <img
+                className="cursor-pointer w-[68px] head"
+                src={logo}
+                alt="#"
+              />
             </a>
             <div
               className={`flex flex-col lg:flex-row items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:backdrop-blur-[90px] max-lg:z-[90] max-lg:h-screen max-lg:w-full ${
@@ -54,7 +82,7 @@ const Header = () => {
                   key={index}
                   href={`/${item.url}`}
                   onClick={(e) => handle_Click(e, item.url.substring(1))}
-                  className="font-normal font-raleway lg:text-base text-lg leading-5 text-white duration-300 "
+                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white duration-300 "
                 >
                   {item.text}
                 </a>
@@ -62,7 +90,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={toggle_Drop}
-                  className="font-normal font-raleway lg:text-base text-lg leading-5 text-white flex items-center space-x-1"
+                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white flex items-center space-x-1"
                 >
                   <span className="font-normal">More</span>
                   <Icons iconName="downIcon" isDropdownOpen={isDropdownOpen} />
@@ -81,12 +109,12 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <button className="sm:p-[13px_32px] p-[12px_24px] lg:hidden border lg:text-blue hover:text-blue hover:bg-white text-white lg:border-blue border-white rounded-lg font-medium text-base leading-4  duration-500  ">
+              <button className="sm:p-[13px_32px] head p-[12px_24px] lg:hidden border lg:text-blue hover:text-blue hover:bg-white text-white lg:border-blue border-white rounded-lg font-medium text-base leading-4  duration-500  ">
                 Enter App
               </button>
             </div>
             <button
-              className="sm:p-[13px_32px] p-[12px_24px] hidden lg:block border hover:border-white hover:bg-blue hover:text-white
+              className="sm:p-[13px_32px] head p-[12px_24px] hidden lg:block border hover:border-white hover:bg-blue hover:text-white
               lg:text-blue text-white lg:border-blue border-white rounded-lg font-medium text-base leading-4 duration-500"
             >
               Enter App
