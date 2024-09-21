@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "roadmap-bg": "url('./assets/images/webp/roadmap-bg.webp')",
-        "theory-bg": "url('./assets/images/webp/theory-bg.webp')",
+        "theory-bg": "url('./assets/images/png/theory-bg.png')",
         "amplify-bg": "url('./assets/images/webp/amplify-bg.webp')",
       },
       fontFamily: {

@@ -19,7 +19,7 @@ const BottomToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 z-40 right-4 p-3 border-[2px] border-btnOrange bg-btnOrange text-white rounded-full shadow-lg transition-opacity duration-300 ${
+      className={`fixed bottom-4 z-40 right-4 p-3 hover:transform hover:scale-110 border-[2px] border-btnOrange bg-btnOrange text-white rounded-full shadow-lg transition-opacity duration-500 ${
         isVisible ? "opacity-100" : "opacity-0"
       } `}
     >

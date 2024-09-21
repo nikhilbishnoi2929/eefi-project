@@ -64,7 +64,7 @@ const Header = () => {
     <>
       <div className="container mx-auto px-3 max-w-[1176px] relative z-[2]">
         <div className={`${!show ? "min-h-screen" : ""} `}>
-          <div className="flex justify-between items-center bg-transparent py-1.5">
+          <div className="flex justify-between items-center bg-transparent py-3">
             <a href="#">
               <img
                 className="cursor-pointer w-[68px] head"
