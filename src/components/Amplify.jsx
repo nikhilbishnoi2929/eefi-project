@@ -95,12 +95,12 @@ const Amplify = () => {
   }, []);
   return (
     <div
-      className="bg-amplify-bg bg-no-repeat bg- 100% bg-cover lg:pt-4 lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] relative"
+      className="bg-amplify-bg bg-no-repeat bg-cover lg:pt-4 lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] relative"
       id="amplify"
     >
       <div className="container max-w-[1140px] mx-auto px-3 relative">
         <div className="flex justify-center lg:pt-0 pt-3">
-          <h2 className="font-plus para text-white font-extrabold lg:text-custom-3xl md:text-4xl sm:text-3xl lg:text-[52px] text-xl lg:leading-[62px] xl:leading-[62px] leading-10 md:left-8 text-center font-plus_jakarta max-w-[726px]">
+          <h2 className="font-plus 2xl:pt-3 para text-white font-extrabold lg:text-custom-3xl md:text-4xl sm:text-3xl lg:text-[52px] text-xl lg:leading-[62px] xl:leading-[62px] leading-10 md:left-8 text-center font-plus_jakarta max-w-[726px]">
             Amplify and STRETCH GAINS
           </h2>
         </div>
@@ -108,7 +108,7 @@ const Amplify = () => {
           className="flex justify-center items-center lg:mt-[325px] md:mt-[196px] sm:mt-[148px] mt-[110px] relative z-[1]"
           id="partners"
         >
-          <p className="max-w-[554px] para font-raleway text-white text-sm leading-[22px] font-normal text-center   max-sm:p-3">
+          <p className="max-w-[554px] para font-raleway text-white text-sm leading-[22px] font-normal text-center max-sm:p-3">
             We take a different balanced approach to finding and creating yield
             opportunities in the everchanging crypto market. Our yield
             strategies help users stay protected and hedged during bear markets
