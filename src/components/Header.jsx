@@ -67,7 +67,7 @@ const Header = () => {
           <div className="flex justify-between items-center bg-transparent py-3">
             <a href="#">
               <img
-                className="cursor-pointer w-[68px] head"
+                className="cursor-pointer w-[68px] xl:translate-x-[-10px] head"
                 src={logo}
                 alt="#"
               />
@@ -102,7 +102,7 @@ const Header = () => {
                     {DROP_DOWN.map((obj, index) => (
                       <a
                         key={index}
-                        href={`/${obj.text}`}
+                        href={`/${obj.url}`}
                         className="block px-2 py-1 text-sm text-gray-700 hover:bg-gray-200 rounded-lg"
                       >
                         {obj.text}

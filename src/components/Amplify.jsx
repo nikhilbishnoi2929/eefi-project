@@ -95,7 +95,7 @@ const Amplify = () => {
   }, []);
   return (
     <div
-      className="bg-amplify-bg bg-no-repeat bg-center bg-cover lg:pt-4 lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] relative"
+      className="bg-amplify-bg bg-no-repeat bg- 100% bg-cover lg:pt-4 lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] relative"
       id="amplify"
     >
       <div className="container max-w-[1140px] mx-auto px-3 relative">
@@ -108,7 +108,7 @@ const Amplify = () => {
           className="flex justify-center items-center lg:mt-[325px] md:mt-[196px] sm:mt-[148px] mt-[110px] relative z-[1]"
           id="partners"
         >
-          <p className="max-w-[554px] para font-raleway text-white text-sm leading-[22px] font-normal text-center max-sm:backdrop-blur-[40px] max-sm:p-3">
+          <p className="max-w-[554px] para font-raleway text-white text-sm leading-[22px] font-normal text-center   max-sm:p-3">
             We take a different balanced approach to finding and creating yield
             opportunities in the everchanging crypto market. Our yield
             strategies help users stay protected and hedged during bear markets

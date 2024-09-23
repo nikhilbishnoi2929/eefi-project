@@ -2,14 +2,14 @@ export const NAV_ITEM = [
   { text: "About", url: "#hero" },
   { text: "IBO Event", url: "#amplify" },
   { text: "EEFI Tokenomics", url: "#theory" },
-  { text: "Team", url: "#team" },
-  { text: "Partners", url: "#partners" },
+  { text: "Team", url: "#" },
+  { text: "Partners", url: "#" },
   { text: "Roadmap", url: "#product" },
 ];
 export const DROP_DOWN = [
-  { text: "about " },
-  { text: "team" },
-  { text: "roadmap", url: "#product" },
+  { text: " about ", url: "#about" },
+  { text: "IBO Event", url: "#amplify" },
+  { text: "Roadmap", url: "#product" },
 ];
 export const ROADMAP_ITEMS = [
   {

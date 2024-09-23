@@ -40,7 +40,7 @@ const Roadmap = () => {
           Roadmap
         </h2>
         <div
-          className="max-w-[880px] max-lg:max-w-[500px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px] max-lg:items-center"
+          className="max-w-[880px] max-lg:max-w-[500px] w-full relative pl-8 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px] max-lg:items-center"
           id="team"
         >
           {ROADMAP_ITEMS.map((item, idx) => (
@@ -103,8 +103,8 @@ const Roadmap = () => {
               <div
                 className={`absolute flex items-center top-0 ${
                   isRightAligned(idx)
-                    ? "lg:-left-20 -left-[52px] sm:-left-[67.6px]"
-                    : "lg:-right-20 lg:left-auto -left-[52px] sm:-left-[67.6px] lg:flex-row-reverse"
+                    ? "lg:-left-20 -left-[36px] sm:-left-[67.6px]"
+                    : "lg:-right-20 lg:left-auto -left-[36px] sm:-left-[67.6px] lg:flex-row-reverse"
                 }`}
               >
                 <div className="relative w-6 h-6">
@@ -119,7 +119,7 @@ const Roadmap = () => {
               </div>
             </div>
           ))}
-          <span className="flex h-[99%] lg:h-full w-0.5 bg-blue-medium absolute top-3 max-md:left-[57px] max-lg:left-[55px] max-sm:left-0 lg:top-0 left-0  lg:left-1/2 lg:-translate-x-1/2"></span>
+          <span className="flex h-[99%] lg:h-full w-0.5 bg-blue-medium absolute top-3 max-md:left-[57px] max-lg:left-[55px] max-sm:left-2 lg:top-0 left-0  lg:left-1/2 lg:-translate-x-1/2"></span>
         </div>
       </div>
       <img

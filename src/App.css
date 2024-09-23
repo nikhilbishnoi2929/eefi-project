@@ -32,7 +32,6 @@
   padding-bottom: 8px;
   background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
   animation: l2 2s linear infinite;
-  opacity: 80%;
 }
 .loader:before {
   content: "Loading...";

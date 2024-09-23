@@ -29,6 +29,9 @@ module.exports = {
       lineHeight: {
         shadow_xl: "55px",
       },
+      backgroundSize: {
+        "100%": "100% 100%",
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 import Icons from "./common/Icon";
 import { THEORY_DATA } from "./common/Helper";
-import lineImage from "../assets/images/webp/line-image.webp";
+import lineImage from "../assets/images/png/line-image.png";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
@@ -19,8 +19,8 @@ const Theory = () => {
         opacity: 1,
         duration: 1,
         ease: "power3.out",
-        delay: 0.7,
-        stagger: 0.9,
+        delay: 0.2,
+        stagger: 0.3,
         scrollTrigger: {
           trigger: ".game_text",
           start: "top 100%",
@@ -33,12 +33,12 @@ const Theory = () => {
       {
         x: 100,
         opacity: 0,
-        duration: 0.5,
+        duration: 1,
       },
       {
         x: 0,
         opacity: 1,
-        duration: 0.5,
+        duration: 1,
         ease: "power3.out",
         delay: 0.4,
         stagger: 0.5,
@@ -58,7 +58,7 @@ const Theory = () => {
       <div className="container max-w-[1168px] mx-auto px-3 my-1 sm:my-0">
         <div className="flex items-center gap-6 lg:flex-row flex-col justify-between">
           <div className="max-w-[572px] game_text w-full flex flex-col sm:items-center lg:items-start">
-            <h2 className="machice_bold game_text font-extrabold sm:leading-shadow_xl text-text_lg leading-8 sm:text-text_xl sm:text-center lg:text-left text-white">
+            <h2 className="machice_bold game_text font-extrabold sm:leading-shadow_xl text-text_lg leading-10 sm:text-text_xl sm:text-center lg:text-left text-white">
               (E,E) Game Theory: An UPGRADE from (3,3)
             </h2>
             <p className="sm:mt-11 game_text mt-6 text-white font-raleway capitalize text-base font-normal sm:text-center lg:text-left  italic max-w-[515px]">
@@ -82,13 +82,13 @@ const Theory = () => {
               is the UPGRADE.
             </p>
           </div>
-          <div className="max-w-[530px] relative w-full mt-6 lg:mt-0">
+          <div className="max-w-[530px] game_right relative w-full mt-6 lg:mt-0">
             <div className="mx-auto w-[114px] relative z-[1] sm:w-[129px] bg-white rounded h-[93px] grid place-items-center">
               <div className="sm:w-[116px] w-[102px] h-20 rounded bg-blue flex flex-col justify-center items-center">
-                <p className="machice_bold game_right font-extrabold text-white text-xl sm:text-2xl text-center">
+                <p className="machice_bold font-extrabold text-white text-xl sm:text-2xl text-center">
                   YOU
                 </p>
-                <p className="font-normal game_right text-sm text-white text-center">
+                <p className="font-normal font-raleway text-sm text-white text-center">
                   (Flywheel)
                 </p>
               </div>
@@ -97,7 +97,7 @@ const Theory = () => {
               {THEORY_DATA.map((items, idx) => (
                 <div
                   key={idx}
-                  className={`mt-9 game_right flex gap-3 sm:gap-6 items-start w-full ${
+                  className={`mt-9 flex gap-3 sm:gap-6 items-start w-full ${
                     idx === 2 || idx === 3
                       ? "justify-center gap-3 sm:gap-9"
                       : "justify-between"
@@ -106,16 +106,16 @@ const Theory = () => {
                   {items.items.map((data, index) => (
                     <div
                       key={index}
-                      className="sm:max-w-[160px] game_right max-w-[103px] h-full shadow-text_xl w-full px-2 pb-2 min-h-[130px] bg-white pt-[18px] rounded-md flex flex-col items-center"
+                      className="sm:max-w-[160px] max-w-[103px] h-full shadow-text_xl w-full px-2 pb-2 min-h-[130px] bg-white pt-[18px] rounded-md flex flex-col items-center"
                     >
                       <Icons
                         className="max-w-6 w-full md:max-w-7"
                         iconName={data.icon}
                       />
-                      <p className="mt-2 machice_bold game_right capitalize font-extrabold text-black text-sm sm:leading-5 sm:text-base text-center">
+                      <p className="mt-2 machice_bold capitalize font-extrabold text-black text-sm sm:leading-5 sm:text-base text-center">
                         {data.title}
                       </p>
-                      <p className="font-normal font-raleway game_right capitalize leading-4 text-sm text-black max-w-[123px] text-center mt-1">
+                      <p className="font-normal font-raleway capitalize leading-4 text-sm text-black max-w-[123px] text-center mt-1">
                         {data.text}
                       </p>
                     </div>
