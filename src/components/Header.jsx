@@ -98,7 +98,7 @@ const Header = () => {
                   <Icons iconName="downIcon" isDropdownOpen={isDropdownOpen} />
                 </button>
                 {isDropdownOpen && (
-                  <div className="absolute -left-2 mt-2 w-20 bg-white rounded-lg shadow-lg">
+                  <div className="absolute -left-2 mt-2 z-30 w-20 bg-white rounded-lg shadow-lg">
                     {DROP_DOWN.map((obj, index) => (
                       <a
                         key={index}

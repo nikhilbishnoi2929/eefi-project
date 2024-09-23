@@ -46,7 +46,7 @@ const Roadmap = () => {
           {ROADMAP_ITEMS.map((item, idx) => (
             <div
               key={idx}
-              className={`max-w-[373px] roadmap relative w-full border border-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-blue-light ${
+              className={` py-5 sm:py-9 px-3 sm:px-4 max-w-[373px] roadmap relative w-full border border-blue rounded-lg lg:-mt-3 bg-blue-light ${
                 isRightAligned(idx) ? "lg:ml-auto" : ""
               }`}
             >
