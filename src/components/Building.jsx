@@ -12,7 +12,7 @@ const Building = () => {
         alt="heroBg"
       />
       <img
-        className="absolute left-0 max-xl:-top-4 max-lg:-top-1 max-sm:top-0 xl:max-w-[1170px] lg:max-w-[900px] object-cover lg:h-[720px] xl:h-[810px] h-[600px] max-md:object-cover md:w-full 2xl:hidden block"
+        className="absolute left-0 max-xl:-top-4 max-lg:-top-1 max-sm:top-[-70px] xl:max-w-[1170px] lg:max-w-[1040px] object-cover lg:h-[720px] xl:h-[810px] h-[600px] max-md:object-cover md:w-full 2xl:hidden block"
         src={ellipsHero}
         alt="#"
       />
@@ -35,7 +35,7 @@ const Building = () => {
             </a>
           </div>
           <img
-            className="xl:max-w-[635px] h-[502px] xl:h-[876px] md:max-w-[450px] md:h-auto md:w-full absolute lg:relative top-10 md:-top-10 lg:top-5 right-0 -z-10 opacity-50 sm:opacity-820 w-[335px] lg:opacity-100 pointer-events-none lg:pt-0 pt-9"
+            className="xl:max-w-[635px] h-[502px] xl:h-[876px] md:max-w-[450px] md:h-auto md:w-full absolute lg:relative top-10 md:-top-10 lg:top-0 right-10 max-sm:right-0 -z-10 opacity-50 sm:opacity-820 w-[335px] lg:opacity-100 pointer-events-none lg:pt-0 pt-9"
             src={imageHero}
             alt="imageHero"
           />

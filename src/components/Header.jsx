@@ -11,20 +11,15 @@ const Header = () => {
       {
         y: -100,
         opacity: 0,
-        duration: 1,
+        duration: 0.2,
       },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.2,
         ease: "power3.out",
         delay: 0.5,
         stagger: 0.6,
-        scrollTrigger: {
-          trigger: ".head",
-          start: "top center",
-          end: "bottom 50%",
-        },
       }
     );
   }, []);
@@ -73,7 +68,7 @@ const Header = () => {
               />
             </a>
             <div
-              className={`flex flex-col lg:flex-row items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:backdrop-blur-[90px] max-lg:z-[90] max-lg:h-screen max-lg:w-full ${
+              className={`flex flex-col lg:flex-row items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:bg-blue max-lg:z-[90] max-lg:h-screen max-lg:w-full ${
                 show ? "" : " !right-0"
               }`}
             >
@@ -103,6 +98,7 @@ const Header = () => {
                       <a
                         key={index}
                         href={`/${obj.url}`}
+                        onClick={(e) => handle_Click(e, obj.url.substring(1))}
                         className="block px-2 py-1 text-sm text-gray-700 hover:bg-gray-200 rounded-lg"
                       >
                         {obj.text}
