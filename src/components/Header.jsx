@@ -86,7 +86,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={toggle_Drop}
-                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white flex items-center space-x-1 duration-300  ease-linear after:absolute after:bg-white after:h-[3px] after:w-0 after:left-[50%]
+                  className="font-normal head font-raleway lg:text-base text-lg leading-5 text-white flex items-center space-x-1 duration-300 ease-linear after:absolute after:bg-white after:h-[3px] after:w-0 after:left-[50%]
                     after:translate-x-[-50%] hover:after:w-[31px] after:bottom-[-5px] after:rounded after:duration-300 after:ease-linear after:mx-auto relative"
                 >
                   <span className="font-normal">More</span>

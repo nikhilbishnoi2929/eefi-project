@@ -119,7 +119,7 @@ const Roadmap = () => {
               </div>
             </div>
           ))}
-          <span className="flex h-[99%] lg:h-full w-0.5 bg-blue-medium absolute top-3 max-md:left-[57px] max-lg:left-[55px] max-sm:left-2 lg:top-0 left-0  lg:left-1/2 lg:-translate-x-1/2"></span>
+          <span className="flex h-[99%] lg:h-full w-0.5 bg-blue-medium absolute top-3 max-md:left-[57px] max-lg:left-[55px] max-sm:left-2 lg:top-0 left-0 lg:left-1/2 lg:-translate-x-1/2"></span>
         </div>
       </div>
       <img

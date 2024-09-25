@@ -61,7 +61,7 @@ const Theory = () => {
             <h2 className="machice_bold game_text font-extrabold sm:leading-shadow_xl text-text_lg leading-10 sm:text-text_xl sm:text-center lg:text-left text-white">
               (E,E) Game Theory: An UPGRADE from (3,3)
             </h2>
-            <p className="sm:mt-11 max-sm:text-sm game_text mt-6 text-white font-raleway capitalize text-base font-normal sm:text-center lg:text-left  italic max-w-[515px]">
+            <p className="sm:mt-11 max-sm:text-sm game_text mt-6 text-white font-raleway capitalize text-base font-normal sm:text-center lg:text-left italic max-w-[515px]">
               Remember (3,3) at its core was about social coordination. Or,
               people working together to achieve a common outcome or goal. (E,E)
               is the same. But with (E,E) people are working together not to
@@ -70,7 +70,7 @@ const Theory = () => {
               yield token… $EEFI. A token that can produce yield in any market
               condition.
             </p>
-            <p className="sm:mt-3 max-sm:text-sm game_text lg:mt-4 mt-2 font-raleway text-white text-base capitalize font-normal sm:text-center lg:text-left  italic max-w-[502px]">
+            <p className="sm:mt-3 max-sm:text-sm game_text lg:mt-4 mt-2 font-raleway text-white text-base capitalize font-normal sm:text-center lg:text-left italic max-w-[502px]">
               To achieve this (E,E) has everyone work together by interacting
               with and supporting its ecosystem flywheel: Vaults, Bonds, Markets
               and other components. Interaction with the (E,E) Flywheel will
