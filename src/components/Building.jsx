@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import ellipsHero from "../assets/images/webp/main-ellips.webp";
 import heroBg from "../assets/images/webp/light-image.webp";
-import imageHero from "../assets/images/png/dragon-image.png";
+import imageHero from "../assets/images/webp/dragon-image.webp";
 const Building = () => {
   return (
     <div className="relative pb-24 lg:pb-0">
@@ -29,7 +29,7 @@ const Building = () => {
             </p>
             <a
               href="/"
-              className="font-bold text-lg text-white leading-5 underline"
+              className="font-bold text-lg text-white leading-5 border-b-[1.1px]"
             >
               Audited by Omniscia
             </a>
@@ -50,7 +50,7 @@ const Building = () => {
         ))}
       </div>
       <img
-        className="absolute -top-12 left-[-124px] h-[810px] w-[80%] 2xl:block hidden"
+        className="absolute -top-12 pointer-events-none left-[-124px] h-[810px] w-[80%] 2xl:block hidden"
         src={ellipsHero}
         alt="ellipsHero"
       />

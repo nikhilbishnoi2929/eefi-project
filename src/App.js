@@ -4,7 +4,6 @@ import Building from "./components/Building";
 import BottomToTop from "./components/BottomToTop";
 import Roadmap from "./components/Roadmap";
 import Theory from "./components/Theory";
-import PreLoader from "./components/PreLoader";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Roadmap />
       <Theory />
       <BottomToTop />
-      <PreLoader />
     </div>
   );
 }

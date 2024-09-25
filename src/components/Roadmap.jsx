@@ -125,7 +125,7 @@ const Roadmap = () => {
       <img
         src={cloudsEllips}
         alt="cloudsEllips"
-        className="w-full absolute top-[-6px] left-0 -translate-y-1/2"
+        className="w-full pointer-events-none absolute top-[-6px] left-0 -translate-y-1/2"
       />
     </div>
   );
