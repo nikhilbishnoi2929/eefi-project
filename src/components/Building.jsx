@@ -20,7 +20,7 @@ const Building = () => {
       <div className="container mx-auto px-3 max-w-[1176px] mb-20 pb-20 lg:pb-0 lg:mb-0 relative">
         <div className="flex lg:flex-row flex-col xl:-mt-12 relative z-[1]">
           <div className="xl:pt-[182px] lg:pt-[118px] sm:pt-20 pt-14">
-            <h1 className="text-white max-w-[335px] font-medium sm:text-5xl text-4xl uppercase lg:text-text_2xl machina_regular md:text-6xl sm:max-w-[463px] lg:leading-[95px] leading-[50px] sm:leading-[60px]">
+            <h1 className="text-white machice_regular lg:max-w-[335px] font-medium sm:text-5xl text-4xl uppercase lg:text-text_2xl machina_regular md:text-6xl sm:max-w-[463px] lg:leading-[95px] leading-[50px] sm:leading-[60px]">
               Building elastic Protocol
             </h1>
             <p className="font-normal font-raleway text-base leading-6 text-white max-w-[524px] md:my-6 my-4 capitalize">

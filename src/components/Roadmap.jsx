@@ -36,7 +36,7 @@ const Roadmap = () => {
       id="product"
     >
       <div className="container max-w-[1164px] mx-auto px-3 my-12 relative z-[2]">
-        <h2 className="font-bold roadmap machice_normal max-sm:leading-[44px] text-center leading-[55px] text-4xl lg:text-text_xl text-white">
+        <h2 className="font-bold roadmap machice_bold max-sm:leading-[44px] text-center leading-[55px] text-4xl lg:text-text_xl text-white">
           Roadmap
         </h2>
         <div
